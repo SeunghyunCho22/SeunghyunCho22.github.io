@@ -18,106 +18,106 @@ Complete inserting background sound & jumping sound!
 
 c# script
 
-<pre><code>using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using UnityEngine;
+  using System;
+  using System.Collections;
+  using System.Collections.Generic;
+  using System.Collections.Specialized;
+  using UnityEngine;
 
-public class Character : MonoBehaviour
-{
-    private Rigidbody2D rigid;
-    public int jumpCount = 0;
-    float bounce = 5f;
+  public class Character : MonoBehaviour
+  {
+      private Rigidbody2D rigid;
+      public int jumpCount = 0;
+      float bounce = 5f;
 
-    public AudioSource mySfx;
+      public AudioSource mySfx;
 
-    public AudioClip jumpSfx;
+      public AudioClip jumpSfx;
 
-    SpriteRenderer spriteRenderer;
+      SpriteRenderer spriteRenderer;
 
-    Animator anim;
+      Animator anim;
 
-    GameObject character;
+      GameObject character;
 
-    void Start()
-    {
-        rigid = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        anim = GetComponent<Animator>();
-        this.character = GameObject.Find("character");
-    }
-
-
-
-    void OncollisionEnter2D(Collider2D col)
-    {
-        jumpCount = 0;
-        if (col.gameObject.tag == "groundunit")
-        {
-            Debug.Log("충돌");
-        }
-    }
+      void Start()
+      {
+          rigid = GetComponent<Rigidbody2D>();
+          spriteRenderer = GetComponent<SpriteRenderer>();
+          anim = GetComponent<Animator>();
+          this.character = GameObject.Find("character");
+      }
 
 
 
-    void Update()
-    {
-        float hor = Input.GetAxisRaw("Horizontal");
-
-        rigid.velocity = new Vector2(hor * 3.0f, rigid.velocity.y);
-
-        if (jumpCount < 2)
-        {
-
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                anim.SetBool("isJumping", true);
-                rigid.AddForce(Vector2.up * bounce, ForceMode2D.Impulse);
-                jumpCount++;
-                JumpSound();
-
-            }
-
-            else
-            {
-                anim.SetBool("isJumping", false);
-            }
-
-        }
-
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            anim.SetBool("isSliding", true);
-
-        }
-        else if (Input.GetKeyUp(KeyCode.DownArrow))
-        {
-            anim.SetBool("isSliding", false);
-        }
+      void OncollisionEnter2D(Collider2D col)
+      {
+          jumpCount = 0;
+          if (col.gameObject.tag == "groundunit")
+          {
+              Debug.Log("충돌");
+          }
+      }
 
 
-        //방향상태
-        if (Input.GetButtonDown("Horizontal"))
-        {
-            spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
-        }
 
-        //animation walk
-        if (rigid.velocity.normalized.x == 0)
-        {
-            anim.SetBool("isWalking", false);
-        }
-        else
-        {
-            anim.SetBool("isWalking", true);
-        }
+      void Update()
+      {
+          float hor = Input.GetAxisRaw("Horizontal");
+
+          rigid.velocity = new Vector2(hor * 3.0f, rigid.velocity.y);
+
+          if (jumpCount < 2)
+          {
+
+              if (Input.GetKeyDown(KeyCode.W))
+              {
+                  anim.SetBool("isJumping", true);
+                  rigid.AddForce(Vector2.up * bounce, ForceMode2D.Impulse);
+                  jumpCount++;
+                  JumpSound();
+
+              }
+
+              else
+              {
+                  anim.SetBool("isJumping", false);
+              }
+
+          }
+
+          if (Input.GetKeyDown(KeyCode.DownArrow))
+          {
+              anim.SetBool("isSliding", true);
+
+          }
+          else if (Input.GetKeyUp(KeyCode.DownArrow))
+          {
+              anim.SetBool("isSliding", false);
+          }
 
 
-    }
+          //방향상태
+          if (Input.GetButtonDown("Horizontal"))
+          {
+              spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
+          }
 
-    void JumpSound()
-    {
-        mySfx.PlayOneShot(jumpSfx);
-    }
-}</code></pre>
+          //animation walk
+          if (rigid.velocity.normalized.x == 0)
+          {
+              anim.SetBool("isWalking", false);
+          }
+          else
+          {
+              anim.SetBool("isWalking", true);
+          }
+
+
+      }
+
+      void JumpSound()
+      {
+          mySfx.PlayOneShot(jumpSfx);
+      }
+  }
