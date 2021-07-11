@@ -11,7 +11,7 @@ Mission : Allowing up to two jumps. / Inserting background sound & jumping sound
 현재 어떤 이유에서인지 실행이 잘 되지 않음. ※추후 수정 예정.
 
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/78609676/125198452-dfa77000-e29c-11eb-8490-47ed6a1ebd01.png)
 
 
 Complete inserting background sound & jumping sound!
