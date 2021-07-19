@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[모각코]3rd-day"
+title: "[모각코]4th-day"
 ---
 
 4th Mogakko.
