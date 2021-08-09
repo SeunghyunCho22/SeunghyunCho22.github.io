@@ -15,5 +15,6 @@ player가 동물을 공격하여 정해진 hp를 감소시켜 hp가 0에 도달�
 
        
        
-위와 같이 동물에 해당하는 제작된 스크립트를 보면 Item_Prefeb칸에서 Meat_Raw(날고기), Meat_Cooked(익힌고기), Meat_Burnt(탄 고기)중 해체 위치에 놓일 고기를 설정해줄 수 있다.
+위와 같이 동물에 해당하는 제작된 스크립트를 보면 Item_Prefeb칸에서 Meat_Raw(날고기), Meat_Cooked(익힌고기), Meat_Burnt(탄 고기)중 해체 위치에 놓일 고기를 설정해줄 수 있다.   
+
 ※참고로 익히지 않은 날 고기를 습득할 시, player의 행복도가 감소함.※
