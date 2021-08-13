@@ -32,4 +32,4 @@ title: "[모각코]10th-day"
    
    [Islands 인게임 내부의 모습]
       
-      ![image](https://user-images.githubusercontent.com/78609676/129336310-eb825ca8-ae75-49fb-8277-f95339a313d0.png)
+   ![image](https://user-images.githubusercontent.com/78609676/129336310-eb825ca8-ae75-49fb-8277-f95339a313d0.png)
