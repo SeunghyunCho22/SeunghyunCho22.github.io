@@ -27,7 +27,7 @@ title: "[모각코]10th-day"
    
    ![image](https://user-images.githubusercontent.com/78609676/129335196-6c332882-08b8-417d-972f-cdbfe1dd350d.png)
    
-   [Islands preview]
+   [Islands preview]   
    ![image](https://user-images.githubusercontent.com/78609676/129335687-59f3b581-351c-4102-a902-7200e49022cc.png)
    
    [Islands 인게임 내부의 모습]   
