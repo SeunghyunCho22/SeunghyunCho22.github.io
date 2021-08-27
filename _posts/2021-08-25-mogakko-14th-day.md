@@ -9,7 +9,7 @@ title: "[모각코]14th-day"
 ![image](https://user-images.githubusercontent.com/78609676/131130118-95de922c-10e9-4ca3-b231-c9d1c359ee9b.png)   
 이처럼 인게임 내에서는 플레이어가 숍 문을 열고 (특정한 값을 눌러 문을 여는 애니메이션은 추후 제작 예정) 키트 근처로 가면 '열쇠 프린터 조작(E)'라는 메시지가 뜬다.   
 
-![image](https://user-images.githubusercontent.com/78609676/131130424-40121870-3c4b-463c-99c4-5130aceb4691.png)
+![image](https://user-images.githubusercontent.com/78609676/131130424-40121870-3c4b-463c-99c4-5130aceb4691.png)   
 이때 E를 누르면 위와 같은 화면이 나오고, create를 마우스로 클릭하면,   
 ![image](https://user-images.githubusercontent.com/78609676/131130537-db47ec4b-b5e9-480e-9302-20d37a773523.png)   
 이와 같이 짧은 제작 시간을 거쳐   
